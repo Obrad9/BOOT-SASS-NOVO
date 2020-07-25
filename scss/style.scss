@@ -71,17 +71,20 @@
 
 .hero {
     
-    
-
+    &__image {
+        position: relative;
+        width: 100%;
+    }
+  
     &__pic {
         width: 100%;
         height: 100vh;
-        position: absolute;
         opacity: 0.8;
     }
 
     &__buttons-group {
         position: absolute;
+        top: 10%;
         height: 100%;
         width: 100%;
         display: flex;
@@ -114,4 +117,31 @@
         background-color: rgb(170, 170, 170);
         border: 1px solid rgb(238, 238, 238);
     }
+}
+
+.main {
+    
+
+   &__heading {
+       text-align: center;
+       font-size: 2.3rem;
+       font-weight: 500;
+       font-family: Tahoma;
+   }
+
+   .section-wrap {
+       display: flex;
+
+
+       .primary-article {
+           flex: 2;
+       }
+
+       .secondary-article {
+           flex: 1;
+       }
+   }
+
+   
+       
 }

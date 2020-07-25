@@ -1,0 +1,117 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.nav {
+    display: flex;
+    background-color: rgb(238, 238, 238);
+    
+
+    &__brand {
+        flex: 2;
+      //  background-color: rgb(207, 207, 207);
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+
+        .logo__image {
+            height: 50px;
+            margin: 5px;
+            flex: 1;
+        }
+
+        .logo__name {
+            flex: 1;
+            margin: 0;
+            padding-left: 10px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            font-family: Roboto;
+        }
+    }
+
+    &__list {
+        flex: 1.5;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        text-align: center;
+       // background-color: rgb(207, 207, 207);
+    }
+
+    &__item {
+        flex: 1;
+        font-size: 1.2rem;
+    }
+    
+    &__link {
+        display: inline-block;
+        width: 100%;
+        padding: 1rem;
+        color: black;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+
+        
+        &:hover{
+            text-decoration-line: none;
+            background-color: rgb(170, 170, 170);
+            color: white;
+            
+        }
+    }
+}
+
+.hero {
+    
+    
+
+    &__pic {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        opacity: 0.8;
+    }
+
+    &__buttons-group {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    
+    &__button {
+        margin: 5px;
+        padding: 10px 15px;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 500;
+        font-family: Tahoma;
+        border-radius: 7px;
+        color: black;
+        background-color: rgb(238, 238, 238);
+        border: 1px solid white;
+        letter-spacing: 0.1rem;
+
+        &:hover {
+            color: white;
+            background-color: rgb(170, 170, 170);
+            border: 1px solid rgb(238, 238, 238);
+        }
+    }
+    &__button--active {
+        color: white;
+        background-color: rgb(170, 170, 170);
+        border: 1px solid rgb(238, 238, 238);
+    }
+}

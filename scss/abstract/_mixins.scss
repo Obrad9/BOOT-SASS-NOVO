@@ -1,0 +1,17 @@
+@mixin button{
+    color: $color-white;
+    background-color: $color-darkgray;
+    border: $border-button;
+}
+
+// Without justify-content
+@mixin flex-sm {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

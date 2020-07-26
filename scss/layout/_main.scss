@@ -10,15 +10,15 @@
  
     .section-wrap {
          display: flex;
-         margin: 40px 10px 0 15px;
+         margin: 2.5rem 1rem 0 1rem;
  
         .primary-article {
             flex: 2;
  
             &__text {
-                font-size: 1.1rem;
+                font-size: $size-sm;
                 font-family: Tahoma;
-                margin: 15px;
+                margin: 1rem;
             }
         }
  
@@ -26,8 +26,8 @@
             flex: 1;
  
             &__heading {
-                margin: 15px 0px;
-                font-size: 1.3rem;
+                margin: 1rem 0;
+                font-size: $size-sm;
                 text-align: center;
             }
         }

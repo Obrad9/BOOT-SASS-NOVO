@@ -1,0 +1,51 @@
+// Hero Image with buttons
+.hero {
+    
+    &__image {
+        position: relative;
+        width: 100%;
+    }
+  
+    &__pic {
+        width: 100%;
+        height: 100vh;
+        opacity: 0.8;
+    }
+
+    &__buttons-group {
+        position: absolute;
+        top: 10%;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &__button {
+        margin: 5px;
+        padding: 0.7rem 1.3rem;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 500;
+        font-family: Tahoma;
+        border-radius: 7px;
+        color: black;
+        background-color: rgba(238, 238, 238, 0.6);
+        border: 1px solid white;
+        letter-spacing: 0.1rem;
+        border: 1px solid black;
+
+        &:hover {
+            color: white;
+            background-color: rgba(170, 170, 170, 0.6);
+            border: 1px solid rgba(238, 238, 238, 0.6);
+        }
+    }
+
+    &__button--active {
+        color: white;
+        background-color: rgba(170, 170, 170, 0.6);
+        border: 1px solid rgba(238, 238, 238, 0.6);
+    }
+}

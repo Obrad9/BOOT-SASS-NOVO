@@ -1,0 +1,60 @@
+// Second Section
+.second-wrap {
+    margin: 2rem;
+
+    .second-section {
+
+        .second-article {
+
+            &__heading {
+                text-align: center;
+                font-size: 2.5rem;
+                font-family: Tahoma;
+                letter-spacing: 2px;
+                font-weight: bold;
+            }
+
+            &__text {
+                margin: 5rem 2rem;
+                font-family: Roboto;
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    // Photo Section
+    .photo-section {
+
+        .images-group {
+
+            &--top {
+                display: flex;
+                justify-content: center;
+            }
+
+            &--bot {
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            &__image-top {
+                margin: 1rem 0.2rem;
+                border-radius: 50%;
+
+                &:hover {
+                    border-radius: 0;
+                    transition-duration: 0.7s;
+                }
+            }
+
+            &__image-bot {
+                margin: 0.5rem 0;  
+
+                &:hover{
+                    transition-duration: 1s;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}

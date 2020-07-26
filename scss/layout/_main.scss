@@ -1,0 +1,35 @@
+// Main Section
+.main {
+
+    &__heading {
+        text-align: center;
+        font-size: 2.3rem;
+        font-weight: 500;
+        font-family: Tahoma;
+    }
+ 
+    .section-wrap {
+         display: flex;
+         margin: 40px 10px 0 15px;
+ 
+        .primary-article {
+            flex: 2;
+ 
+            &__text {
+                font-size: 1.1rem;
+                font-family: Tahoma;
+                margin: 15px;
+            }
+        }
+ 
+        .secondary-article {
+            flex: 1;
+ 
+            &__heading {
+                margin: 15px 0px;
+                font-size: 1.3rem;
+                text-align: center;
+            }
+        }
+    }
+ }

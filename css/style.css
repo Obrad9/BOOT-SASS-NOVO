@@ -190,3 +190,36 @@
   transition-duration: 1s;
   border-radius: 50%;
 }
+
+.footer {
+  display: flex;
+  background-color: #eeeeee;
+  align-items: center;
+  padding: 1rem 0;
+  margin-top: 1rem;
+}
+.footer .footer-left {
+  flex: 1;
+}
+.footer .footer-left__text {
+  margin: 0 0 0 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.footer .footer-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer-right__text {
+  margin: 0 0.5rem 0 0;
+  font-size: 1.2rem;
+}
+.footer .footer-right__link {
+  text-decoration: none;
+}
+.footer .footer-right .fa {
+  font-size: 1.5rem;
+  margin: 0 2px;
+}

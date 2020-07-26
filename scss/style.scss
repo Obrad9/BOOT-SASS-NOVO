@@ -4,11 +4,13 @@
     box-sizing: border-box;
 }
 
-
+// Navigation
 .nav {
     display: flex;
-    background-color: rgb(238, 238, 238);
-    
+    background-color: rgba(238, 238, 238, 0.5);
+    position: absolute;
+    z-index: 1;
+    width: 100%;
 
     &__brand {
         flex: 2;
@@ -56,17 +58,17 @@
         text-transform: uppercase;
         font-weight: 600;
         letter-spacing: 0.1rem;
-
         
         &:hover{
             text-decoration-line: none;
-            background-color: rgb(170, 170, 170);
+           // background-color: rgba(238, 238, 238, 0.5);
             color: white;
             
         }
     }
 }
 
+// Hero Image with buttons
 .hero {
     
     &__image {
@@ -88,37 +90,38 @@
         display: flex;
         justify-content: center;
         align-items: center;
-       
     }
     
     &__button {
         margin: 5px;
-        padding: 10px 15px;
+        padding: 0.7rem 1.3rem;
         text-transform: uppercase;
         font-size: 1.5rem;
         font-weight: 500;
         font-family: Tahoma;
         border-radius: 7px;
         color: black;
-        background-color: rgb(238, 238, 238);
+        background-color: rgba(238, 238, 238, 0.6);
         border: 1px solid white;
         letter-spacing: 0.1rem;
+        border: 1px solid black;
 
         &:hover {
             color: white;
-            background-color: rgb(170, 170, 170);
-            border: 1px solid rgb(238, 238, 238);
+            background-color: rgba(170, 170, 170, 0.6);
+            border: 1px solid rgba(238, 238, 238, 0.6);
         }
     }
+
     &__button--active {
         color: white;
-        background-color: rgb(170, 170, 170);
-        border: 1px solid rgb(238, 238, 238);
+        background-color: rgba(170, 170, 170, 0.6);
+        border: 1px solid rgba(238, 238, 238, 0.6);
     }
 }
 
+// Main Section
 .main {
-    
 
    &__heading {
        text-align: center;
@@ -131,7 +134,6 @@
         display: flex;
         margin: 40px 10px 0 15px;
 
-
        .primary-article {
            flex: 2;
 
@@ -140,7 +142,6 @@
                font-family: Tahoma;
                margin: 15px;
            }
-           
        }
 
        .secondary-article {
@@ -151,16 +152,17 @@
                font-size: 1.3rem;
                text-align: center;
            }
-           
        }
    }
 }
 
+// Horizontal Line
 .horizontal-line {
     margin: 2.5rem 1.5rem;
     background-color: rgb(122, 122, 122);
 }
 
+// Parallex Section
 .parallax {
 
     &__image {
@@ -186,11 +188,12 @@
     }
 }
 
-
+// Second Section
 .second-wrap {
+    margin: 2rem;
 
     .second-section {
-        margin: 2rem;
+
         .second-article {
 
             &__heading {
@@ -245,6 +248,7 @@
     }
 }
 
+// Footer
 .footer {
     display: flex;
     background-color: rgb(238, 238, 238);
@@ -259,6 +263,7 @@
             margin: 0 0 0 1rem;
             font-size: 1rem;
             font-weight: 500;
+            color: black;
         }
     }
 
@@ -271,10 +276,16 @@
         &__text{
             margin: 0 0.5rem 0 0 ;
             font-size: 1.2rem;
+            color: black;
         }
 
         &__link {
            text-decoration: none;
+           color: black;
+
+           &:hover {
+              color: rgb(75, 75, 75);
+           }
         }
 
         .fa {

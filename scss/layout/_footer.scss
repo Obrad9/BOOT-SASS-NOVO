@@ -24,11 +24,21 @@
             margin: 0 0.5rem 0 0 ;
             font-size: $size-sm;
             color: $color-black;
+
+            @media screen and (max-width: 560px) {
+                font-size: 1rem;
+                margin: 0 0.2rem 0 0;
+            }
+        }
+
+        &__media {
+            margin-right: 0.2rem;
         }
 
         &__link {
            text-decoration: none;
            color: $color-black;
+           
 
            &:hover {
               color: rgb(75, 75, 75);

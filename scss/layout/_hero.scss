@@ -1,4 +1,4 @@
-// Hero Image with buttons
+// Hero Image with Buttons
 .hero {
     
     &__image {
@@ -10,6 +10,10 @@
         width: 100%;
         height: 100vh;
         opacity: 0.8;
+
+        @media screen and (max-width: 560px) {
+            height: 70vh;
+        }
     }
 
     &__buttons-group {
@@ -18,6 +22,10 @@
         height: 100%;
         width: 100%;
         @include flex;
+
+        @media screen and (max-width: 560px) {
+            top: -10%;
+        }
     }
     
     &__button {
@@ -32,6 +40,10 @@
         background-color: $color-lightgray;
         letter-spacing: 0.1rem;
         border: 1px solid $color-black;
+
+        @media screen and (max-width: 560px) {
+            font-size: 1.2rem;
+        }
 
         &:hover {
             @include button;
